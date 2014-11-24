@@ -1,12 +1,7 @@
-FROM microsoft/aspnet
+FROM microsoft/aspnet:latest
+MAINTAINER Shawn Cicoria "docker@cicoria.com"
 # copy the contents of the local directory to /app/ on the image
 ADD HelloMvc.tar /app/
-#COPY project.json /app/
-#COPY Startup.cs /app/
-#ADD /Controllers/HomeController.cs /app/Controllers/
-#COPY ./Models/User.cs /app/Models/
-#COPY ./Views/Home/* /app/Views/Home/
-#COPY ./Views/Shared/* /app/Views/Shared/
 
 RUN ls -l
 # set the working directory for subsequent commands
