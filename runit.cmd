@@ -1,0 +1,1 @@
+docker run -d -t -p 8080:5004 cicorias/dockermvcsample2
